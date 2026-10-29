@@ -1,0 +1,54 @@
+# Managed by macrokb_ui.py (comments are not preserved; backup: config.yaml.bak)
+passthrough_unbound: true
+profiles:
+  numpad:
+    device:
+      name: U
+    bindings:
+      KEY_KPDOT:
+        action: back
+      KEY_KP3:
+        action: forward
+      KEY_KPASTERISK:
+        action: open_url
+        url: https://claude.ai
+      KEY_KP9:
+        action: send_keys
+        keys: end+semicolon
+      KEY_KP8:
+        action: switch_profile
+        profile: media
+      KEY_KPSLASH:
+        action: send_keys
+        keys: ctrl+grave
+      KEY_KPENTER:
+        action: terminal_copy
+      KEY_KPPLUS:
+        action: terminal_paste
+      KEY_KPMINUS:
+        action: run_command
+        cmd: code
+  media:
+    device:
+      name: CHANGE ME
+    bindings:
+      KEY_KP1:
+        action: media_control
+        command: prev
+      KEY_KP2:
+        action: media_control
+        command: play_pause
+      KEY_KP3:
+        action: media_control
+        command: next
+      KEY_KP4:
+        action: media_control
+        command: vol_down
+        repeat: true
+      KEY_KP6:
+        action: media_control
+        command: vol_up
+        repeat: true
+      KEY_KP8:
+        action: switch_profile
+        profile: numpad
